@@ -13,7 +13,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.splashscreen);
 
         myintent = new Intent(this, MainActivity.class);
-        splashScreen(2000);
+        if(savedInstanceState == null)  splashScreen(2000);
     }
 
     public void splashScreen (final int x) {
